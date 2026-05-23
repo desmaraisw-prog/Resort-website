@@ -16,7 +16,7 @@
         <li><a href="rooms.html">Rooms</a></li>
         <li><a href="bookings.html">Bookings</a></li>
         <li><a href="activities.html">Activities</a></li>
-        <li><a href="resto.html">Resto</a></li>
+        <li><a href="resto.html">Restaurants</a></li>
         <li><a href="review.html">Review</a></li>
       </ul>
     </nav>
@@ -24,7 +24,58 @@
 
   <main>
     <h2>Bookings</h2>
-    <!-- Page vide, contenu à ajouter -->
+    <section class="booking-section">
+      <div class="booking-card">
+        <h3>Choose your room</h3>
+        <form id="booking-form">
+          <div class="room-option">
+            <input type="radio" id="standard-room" name="room" value="Standard Room" data-price="120" checked>
+            <label for="standard-room">
+              <strong>Standard Room</strong>
+              <span>Comfortable room with queen bed, workspace, and modern bathroom.</span>
+              <strong>$120 / night</strong>
+            </label>
+          </div>
+          <div class="room-option">
+            <input type="radio" id="deluxe-suite" name="room" value="Deluxe Suite" data-price="180">
+            <label for="deluxe-suite">
+              <strong>Deluxe Suite</strong>
+              <span>Spacious suite with lounge area and stunning views.</span>
+              <strong>$180 / night</strong>
+            </label>
+          </div>
+          <div class="room-option">
+            <input type="radio" id="family-suite" name="room" value="Family Suite" data-price="220">
+            <label for="family-suite">
+              <strong>Family Suite</strong>
+              <span>Large room with separate sleeping areas for families.</span>
+              <strong>$220 / night</strong>
+            </label>
+          </div>
+          <div class="booking-fields">
+            <label>
+              Nights
+              <input type="number" id="room-nights" min="1" value="1">
+            </label>
+            <label>
+              Guests
+              <input type="number" id="room-guests" min="1" value="1">
+            </label>
+          </div>
+          <button type="button" id="add-to-payment">Add to payment</button>
+        </form>
+      </div>
+
+      <aside class="payment-summary">
+        <h3>Fake payment</h3>
+        <div id="payment-items" class="payment-items">No rooms added yet.</div>
+        <div class="payment-total">Total: $<span id="payment-total">0</span></div>
+        <button type="button" id="checkout-button" disabled>Checkout</button>
+        <p class="payment-note">This is a demo payment page — no real payment is collected.</p>
+      </aside>
+    </section>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

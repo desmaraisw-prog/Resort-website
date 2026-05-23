@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Réservation - Sun Beach Palace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Sun Beach Palace</h1>
+    <nav>
+      <ul class="main-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="bookings.html">Bookings</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="resto.html">Restaurants</a></li>
+        <li><a href="review.html">Review</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Reservation</h2>
+    <nav class="restaurant-links">
+      <ul>
+        <li><a href="resto.html">Buffet</a></li>
+        <li><a href="resto-alacarte.html">À la carte</a></li>
+        <li><a href="resto-reservation.html">Reservation</a></li>
+      </ul>
+    </nav>
+
+    <section class="restaurant restaurant-right">
+      <div class="restaurant-text2">
+        <h3>Reserve a table</h3>
+        <p>Fill out the form to reserve a table at our restaurant. We will confirm availability as soon as possible.</p>
+        <form action="#" method="post" class="reservation-form">
+          <label>Name:<br><input type="text" name="name" required></label><br>
+          <label>Room:<br><input type="text" name="room" required></label><br>
+          <label>Date and time:<br><input type="datetime-local" name="datetime" required></label><br>
+          <label>Number of people:<br><input type="number" name="people" min="1" max="20" value="2" required></label><br>
+          <label>Notes:<br><textarea name="notes"></textarea></label><br>
+          <button type="submit">Send reservation</button>
+        </form>
+      </div>
+      <div class="restaurant-image2">
+        <img src="images/téléchargement (5).jpeg" alt="Reservation image">
+      </div>
+    </section>
+  </main>
+</body>
+</html>
